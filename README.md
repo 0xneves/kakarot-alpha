@@ -35,15 +35,29 @@ $ anvil
 For Anvil use http://localhost:8545
 
 ```shell
-$ forge script script/Counter.s.sol --legacy --compute-units-per-second 4000 --slow --fork-url http://localhost:8545 -vvvvv
+$ forge script script/<SCRIPTNAME>.s.sol --legacy --compute-units-per-second 4000 --slow --fork-url http://localhost:8545 -vvvvv
 
 ```
 
 For Katana use http://localhost:3030
 
 ```shell
-$ forge script script/Counter.s.sol --legacy --compute-units-per-second 4000 --slow --fork-url http://localhost:3030 -vvvvv
+$ forge script script/<SCRIPTNAME>.s.sol --legacy --compute-units-per-second 4000 --slow --fork-url http://localhost:3030 -vvvvv
 
+```
+
+### Run tests functions
+
+Anvil
+
+```shell
+$ forge test --fork-url http://localhost:8545 -vvvvv
+```
+
+Katana
+
+```shell
+$ forge test --fork-url http://localhost:3030 -vvvvv
 ```
 
 ## Foundry
