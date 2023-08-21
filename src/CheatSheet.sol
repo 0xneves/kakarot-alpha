@@ -13,4 +13,13 @@ contract CheatSheet {
     function useRipemd160(bytes memory _hex) public pure returns (bytes32) {
         return ripemd160(_hex);
     }
+
+    function useEcrecover(
+        bytes32 _hash,
+        uint8 v,
+        bytes32 r,
+        bytes32 s
+    ) public pure returns (address) {
+        return ecrecover(_hash, v, r, s);
+    }
 }
