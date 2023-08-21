@@ -14,14 +14,14 @@ contract Revert {
 contract Require {
     fallback() external payable {
         require(
-            msg.value == 1 ether,
+            msg.value == 0.1 ether,
             "msg.value should be strictly equal to 1 eth on Fallback"
         );
     }
 
     receive() external payable {
         require(
-            msg.value == 1 ether,
+            msg.value == 0.1 ether,
             "msg.value should be strictly equal to 1 eth on Receive"
         );
     }
